@@ -7,16 +7,16 @@ var btn = document.querySelectorAll(".fullelem .icon");
 function current() {
   allelem.forEach((elem) => {
     elem.addEventListener("click", () => {
-      // console.log(elem.id);
+      
       fullelem[elem.id].style.display = "block";
-      sessionStorage.setItem("currentPage", elem.id); // ✅ yaha add karo
+      sessionStorage.setItem("currentPage", elem.id); 
     });
   });
 
   btn.forEach((back) => {
     back.addEventListener("click", () => {
       fullelem[back.id].style.display = "none";
-       // ✅ jab front pe aaye to storage clear
+       
       sessionStorage.removeItem("currentPage");
     });
   });
