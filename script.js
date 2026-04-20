@@ -23,7 +23,7 @@ function current() {
 }
 current();
 
-// ✅ YEH NAYA CODE ADD KARO
+
 window.addEventListener("load", () => {
   let savedPage = sessionStorage.getItem("currentPage");
 
@@ -302,7 +302,7 @@ let uv = document.querySelector(".header2 h4:nth-child(5)");
 let visibility = document.querySelector(".header2 h4:nth-child(6)");
 var cityname = document.querySelector(".header1 h3");
 
-var apiKey = '042a95a7de6f4dc8b79164514261904';
+var apiKey = null;
 
 let city = "kareli";
  async function showcase(){
